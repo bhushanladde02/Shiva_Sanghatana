@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" 
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:weightSum="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include layout="@layout/header" />
+        
+
+        
+<LinearLayout android:orientation="horizontal" android:background="@drawable/tab_bg" android:layout_width="fill_parent" android:layout_height="38.0dip"> 
+             <TextView android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@+id/firstTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today Match" />
+             <TextView android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@+id/previousTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cric News" />
+             <TextView android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@+id/lastTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Login" /> 
+</LinearLayout> 
+       <RelativeLayout android:orientation="horizontal" android:id="@+id/RL_prenext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+           <ImageView android:id="@+id/imgPre" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrowleft" android:layout_centerVertical="true" /> 
+           <ImageView android:id="@+id/imgNext" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrowright" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+           <ImageView android:id="@+id/imgLast" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrowright" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+       <!-- android:background="@*android:color/white"  bhushan remove for generate apk. it is present in below line-->
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <WebView android:id="@+id/dailyDetailWebView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" /> 
+                <WebView android:id="@+id/dailyPreDetailWebView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <!-- <ListView android:id="@+id/god_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider" /> -->
+                      
+             </LinearLayout>
+        </FrameLayout>
+       
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/admarvel" />
+    </LinearLayout>
+  
+</LinearLayout>

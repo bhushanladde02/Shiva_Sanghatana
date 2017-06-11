@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:textSize="20sp"
+            android:text="शीर्षक (Title)"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/newstitle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/rect_text_edit"
+		  	 >
+               <requestFocus />
+           </EditText>
+   
+        
+        	<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:textSize="20sp"
+            android:text="बातम्या तपशील (News Details)"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/newsdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:background="@drawable/rect_text_edit"
+		  	 />
+        
+          
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+         
+            android:layout_centerInParent="true"
+            android:text="प्रकाशित (Share News)" />
+    </LinearLayout>
+    
+    
+
+    
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/admarvel" />
+    </LinearLayout>
+
+  
+
+</LinearLayout>
+

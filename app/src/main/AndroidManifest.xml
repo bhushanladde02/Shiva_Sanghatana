@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shivasanghatana.onine.com.shiva_sanghatana"
+    android:versionCode="9"
+    android:versionName="9" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="shivasanghatana.onine.com.shiva_sanghatana.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="shivasanghatana.onine.com.shiva_sanghatana.permission.C2D_MESSAGE" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher5"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- <activity
+             android:name="com.google.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+             android:screenOrientation="portrait" />-->
+        <activity
+            android:name="shivasanghatana.onine.com.shiva_sanghatana.GodSplash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.MainScreen" />
+        <!--<activity android:name="shivasanghatana.onine.com.shiva_sanghatana.GaaliDetails" />-->
+        <!-- <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.Tab1"  ></activity>
+         <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.Tab2" ></activity> -->
+        <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.Tab3" android:windowSoftInputMode="adjustPan|adjustResize"></activity>
+        <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.Authorization"  ></activity>
+        <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.SingleNewsActivity"  android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.DirectNews"  ></activity>
+        <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.AddNewsPage" android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name="shivasanghatana.onine.com.shiva_sanghatana.RegisterPage"  android:windowSoftInputMode="adjustResize"></activity>
+
+
+
+
+
+
+    </application>
+
+</manifest>

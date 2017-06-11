@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <include layout="@layout/header" />
+            <!-- http://onine.in/Shiva/Registeruser?name=bhushan&phonenumber=8055925868&city=nasik&country=india&deviceid=22&gender=m&password=test -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text="पूर्ण नाव(Full Name)*"
+                android:textColor="#372c24"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="30px"
+                android:background="@drawable/rect_text_edit" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text="नोकरी पद(Job Position) / व्यवसाय(business) * "
+                android:textColor="#372c24"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/position"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="30px"
+                android:background="@drawable/rect_text_edit" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text="फोन नंबर(Phone Number)*"
+                android:textColor="#372c24"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:inputType="number"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="30px"
+                android:background="@drawable/rect_text_edit" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10px"
+                    android:text="शहर(City)*"
+                    android:textColor="#372c24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dip"
+                    android:layout_marginTop="10px"
+                    android:text="देश(Country)*"
+                    android:textColor="#372c24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dip"
+                    android:layout_marginTop="10px"
+                    android:text="लिंग(Gender)*"
+                    android:textColor="#372c24"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="110dip"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/rect_text_edit" />
+
+                <EditText
+                    android:id="@+id/country"
+                    android:layout_width="110dip"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="120dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/rect_text_edit" />
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="110dip"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="245dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/rect_text_edit" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text="पासवर्ड(Password)*"
+                android:textColor="#372c24"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="30px"
+                android:background="@drawable/rect_text_edit" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text="'*'- चिन्ह केलेले भरण्यासाठी अनिवार्य आहे "
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:text=" ( '*' Marking fields are mandatory  )"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="90dip"
+                android:layout_marginTop="10px"
+                android:text="नोंदणी करू(Register)" />
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/admarvel" />
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+</ScrollView>

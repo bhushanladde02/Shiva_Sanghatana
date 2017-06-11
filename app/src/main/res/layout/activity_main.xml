@@ -1,0 +1,62 @@
+<LinearLayout android:orientation="vertical"
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:weightSum="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- D:\Android yog\PradeepGodWorkSPace\Sounds\FinalIntegrated_9_2_2014_IntegratedWithChatting present back up -->
+     <include layout="@layout/header" />
+     <LinearLayout 
+		    android:orientation="horizontal" 
+		    android:background="@drawable/tab_bg" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="38.0dip"> 
+             <TextView  android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@+id/firstTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today" /> 
+            <!--   <TextView  android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/previousTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Previous" />
+             <TextView  android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/lastTab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gaali Chat" />--> 
+    </LinearLayout> 
+    <LinearLayout
+        android:id="@+id/loadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+         <TextView
+            android:id="@+id/descText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:text="@string/Description" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:textColor="#ff000000"
+            android:hint="@string/userName"
+            android:ems="10" >
+		<requestFocus />
+        </EditText>
+        
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:onClick="onConnectClicked"            
+            android:width="150dp"
+            android:text="@string/connectToGod" />
+
+    </LinearLayout>
+    
+     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/admarvel" />
+    </LinearLayout>
+</LinearLayout>

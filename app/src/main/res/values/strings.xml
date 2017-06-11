@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="username">मोबाइल क्रमांक   :</string>
+    <string name="password">पासवर्ड                        :</string>
+    <string name="Login">लॉग-इन(Login)</string>
+    <string name="Register">नोंदणी(Register)</string>
+    <string name="sharenews">बातम्या प्रकाशित (Share News)</string>
+    <string name="attempts">Attempts Left:</string>
+    <string name="app_name">शिवा संघटना  (Shiva Sanghatana)</string>
+    <string name="hello_world">जय शिवा</string>
+    <string name="directnews">*थेट बातम्या (Direct News)*</string>
+    <string name="say">say</string>
+    <string name="send">send</string>
+    <string name="Description">Description</string>
+    <string name="userName">userName</string>
+    <string name="connectToGod">connectToGod</string>
+
+</resources>

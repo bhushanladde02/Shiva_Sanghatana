@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header_parent_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f76b3c"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:layout_marginTop="10px"
+             android:layout_marginLeft="10px"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="true"
+            android:textSize="18dp"
+             >
+        </TextView>
+     
+
+         <Button
+            android:id="@+id/button9999"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:text="*ताज्या बातम्या साठी येथे क्लिक करा (Refresh)*" /> 
+    </RelativeLayout>
+
+</LinearLayout>
