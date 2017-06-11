@@ -207,7 +207,7 @@ public class DirectNews extends  ListActivity implements View.OnClickListener/*,
 
 
 
-        new HttpAsyncTask().execute("http://onine.in/Shiva/AuthServlet");
+        new HttpAsyncTask().execute("http://104.239.230.58/Shiva/AuthServlet");
 
 		/*context = this;
 		this.firstTab = ((TextView) findViewById(R.id.firstTab));

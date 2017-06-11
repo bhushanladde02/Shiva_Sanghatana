@@ -101,7 +101,7 @@ public class RegisterPage extends  Activity implements View.OnClickListener/*,
                 pdialog.setMessage("कृपया प्रतीक्षा करा. नोंदणी सुरू आहे (Registration is start....)");
                 pdialog.show();
                 System.out.println("I  am inside the image1 one listner ");
-                new HttpAsyncTask().execute("http://onine.in/Shiva/Registeruser");
+                new HttpAsyncTask().execute("http://104.239.230.58/Shiva/Registeruser");
             }
         });
 

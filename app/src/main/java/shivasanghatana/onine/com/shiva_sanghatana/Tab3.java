@@ -203,7 +203,7 @@ public class Tab3 extends Activity implements View.OnClickListener/*,
         String results=null;
 
         System.out.println("I  am inside the image1 one listner ");
-        new HttpAsyncTask().execute("http://onine.in/Shiva/LoginServlet");
+        new HttpAsyncTask().execute("http://104.239.230.58/Shiva/LoginServlet");
 
 
     }
